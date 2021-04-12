@@ -34,14 +34,17 @@ li {
   color: #18a0fb;
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 100px;
   font-weight: 900;
   width: none;
-  /* border-style: dashed; */
   align-items: center;
   top: 0;
-  background-color: #076892;
+  left: 0;
+  background-color: rgb(7, 104, 146, 0.8);
   margin-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  font-size: x-large;
 }
 .button {
   display: flex;
@@ -81,7 +84,9 @@ li {
 .img {
   display: none;
   height: 100%;
-  widows: 100%px;
+  widows: 100%;
+  overflow: hidden;
+  display: initial;
 }
 @media only screen and (max-width: 730px) {
   .App {
@@ -93,9 +98,7 @@ li {
   .items {
     display: none;
   }
-  .img {
-    display: initial;
-  }
+  
   .toggler {
     display: initial;
   }
@@ -138,7 +141,6 @@ li {
 img{
   display: block;
   max-width: 100%;
-  width: 960px;
 }
 
 /* .overlay {

@@ -1,8 +1,16 @@
+import About from '../About/About';
+import IconSection from '../../Components/IconSection/IconSection';
+import CartList from '../../Components/CartList/CartList';
+import Footer from '../Footer/Footer';
+
 const Home = () => {
     
     return(
         <div className="main">
-            <h1>Home</h1>
+            <About />
+            <IconSection />
+            <CartList/>
+            <Footer />
         </div>
     );
 }

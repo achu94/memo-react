@@ -1,0 +1,11 @@
+.icon-zufrieden {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-zufrieden div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+}
