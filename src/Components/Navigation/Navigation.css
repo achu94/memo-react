@@ -13,10 +13,8 @@
   overflow: hidden;
 }
 .logo {
-  margin: 2%;
-  font-size: 25px;
-  color: black;
-  /* border-style: dashed; */
+  object-fit: contain;
+  width: 10rem;
 }
 li {
   list-style: none;
@@ -38,24 +36,12 @@ li {
   font-weight: 900;
   width: none;
   align-items: center;
-  top: 0;
-  left: 0;
   background-color: rgb(7, 104, 146, 0.8);
   margin-bottom: 10px;
-  position: fixed;
   width: 100%;
   font-size: x-large;
 }
-.button {
-  display: flex;
-  color: rgb(255, 255, 255);
-  margin: 5px;
-  padding: 5%;
-  font-weight: bolder;
-  justify-content: space-around;
-  background: #18a0fb;
-  border-radius: 6px;
-}
+
 .navbuttons {
   display: flex;
   padding: 1%;
@@ -81,12 +67,29 @@ li {
   margin-right: 2%;
   /* border-style: dashed; */
 }
-.img {
-  display: none;
-  height: 100%;
-  widows: 100%;
+.landing_img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
   overflow: hidden;
-  display: initial;
+  width: 100%;
+  height: 400px;
+}
+
+.button {
+  display: flex;
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  padding: 5%;
+  font-weight: bolder;
+  justify-content: space-around;
+  background: #E89B00;
+  border-radius: 6px;
+  font-size: large;
+}
+
+.button:hover {
+  background-color: #f8bc44;
 }
 @media only screen and (max-width: 730px) {
   .App {
@@ -136,11 +139,6 @@ li {
 
 .nav a {
   color: #E89B00;
-}
-
-img{
-  display: block;
-  max-width: 100%;
 }
 
 /* .overlay {

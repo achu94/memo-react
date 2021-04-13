@@ -31,11 +31,15 @@
 p, h1, h2, h3 {
     font-family: 'Rubik', sans-serif;
     color: rgb(69, 69, 69);
-    margin-bottom: 0.2rem;
+    margin-bottom: 1rem;
 }
 
 p {
     font-size: large;
+}
+
+h1 {
+    color: #03405B;
 }
 
 body {
@@ -48,7 +52,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     max-width: 1200px;
-    padding: 2rem;
+    padding: 1rem;
     border-bottom: 2px solid #438FB0;
 
     /* only on developmen */

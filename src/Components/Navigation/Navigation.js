@@ -1,9 +1,9 @@
-import {NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import React, { useState } from "react";
 import "./Navigation.css";
 
-import img from '../../media/bg.jpg'
+import logo from '../../media/logo.png'
 
 export default function App() {
   const [state, setstate] = useState(false);
@@ -16,9 +16,9 @@ export default function App() {
 
   return (
     <>
-<img src="https://picsum.photos/1920/1200" alt=""/>
+      <div className="landing_img"> <img src="https://picsum.photos/1920/1200" alt="" /></div>
       <div className="nav">
-        <div className="logo">Branding</div>
+        <div className="logo"> <img style={{width: "10rem"}} src={logo} alt="Mehmed Hyusein" /></div>
         <div className="ab">
           <ul className="items">
             <li><NavLink to="/about"> Über uns </NavLink></li>
@@ -27,7 +27,7 @@ export default function App() {
           </ul>
           <ul className="navbuttons">
             <button className="button">
-              <li><NavLink to="/kontakt" > Kontakt </NavLink></li>
+              <li><NavLink style={{ color: "white" }} to="/kontakt" > Kontakt </NavLink></li>
             </button>
           </ul>
         </div>
@@ -53,9 +53,9 @@ export default function App() {
                 </div>
               </li>
               <li><NavLink to="/"> Home </NavLink></li>
-            <li><NavLink to="/about"> Über uns </NavLink></li>
-            <li><NavLink to="/referenz"> Referenz </NavLink></li>
-            <li><NavLink to="/kontakt" > Kontakt </NavLink></li>
+              <li><NavLink to="/about"> Über uns </NavLink></li>
+              <li><NavLink to="/referenz"> Referenz </NavLink></li>
+              <li><NavLink to="/kontakt" > Kontakt </NavLink></li>
             </ul>
           </div>
         </div>

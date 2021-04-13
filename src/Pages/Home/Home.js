@@ -6,12 +6,12 @@ import Footer from '../Footer/Footer';
 const Home = () => {
     
     return(
-        <div className="main">
+        <>
             <About />
             <IconSection />
             <CartList/>
             <Footer />
-        </div>
+        </>
     );
 }
 
