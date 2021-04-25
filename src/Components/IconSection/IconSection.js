@@ -11,7 +11,7 @@ const IconSection = () => {
             <div className="icon-zufrieden">
                 <div><ThumbUpIcon fontSize="large" style={{ color: "#438FB0" }} /> <p> Zufriedenheit </p> </div>
                 <div><TimerIcon fontSize="large" style={{ color: "#438FB0" }} /> <p> Püntlichkeit </p> </div>
-                <div><BeenhereIcon fontSize="large" style={{ color: "#438FB0" }} /> <p> Langjärigkeit </p> </div>
+                <div><BeenhereIcon fontSize="large" style={{ color: "#438FB0" }} /> <p> Qualität </p> </div>
             </div>
         </div>
     );

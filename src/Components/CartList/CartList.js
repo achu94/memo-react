@@ -7,34 +7,26 @@ const CartList = () => {
     const LeistungArr = [
         {
             header: 'Wandsysteme',
-            body: "Wandsysteme erfahrung"
+            body: "Die Montage von Wandsystemen bildet seit unserer Firmengründung einen Schwerpunkt unseres Leistungsspektrums. Dabei stehen klassische Produkte wie standardisierte Metallständerwände neben anspruchsvollen, individuellen Lösungen."
         },
         {
-            header: 'Wandsysteme 2',
+            header: 'Deckensysteme',
+            body: "Deckensysteme und Deckenbekleidungen bieten moderne Lösungen für viele Anforderungen und Einsatzgebiete im Trockenbau."
+        },
+        {
+            header: 'Fußbodensysteme',
             body: "Wandsysteme erfahrung 2"
         },
         {
-            header: 'Wandsysteme 3',
-            body: "Wandsysteme erfahrung 3"
-        },
-        {
-            header: 'Wandsysteme 4',
+            header: 'Akustik',
             body: "Wandsysteme erfahrung 4"
         },
         {
-            header: 'Wandsysteme 5',
-            body: "Wandsysteme erfahrung 5"
+            header: 'Brandschutz',
+            body: "Wandsysteme erfahrung 8"
         },
         {
-            header: 'Wandsysteme 6',
-            body: "Wandsysteme erfahrung 6"
-        },
-        {
-            header: 'Wandsysteme 7',
-            body: "Wandsysteme erfahrung 7"
-        },
-        {
-            header: 'Wandsysteme 8',
+            header: 'Innenausbau',
             body: "Wandsysteme erfahrung 8"
         }
     ]

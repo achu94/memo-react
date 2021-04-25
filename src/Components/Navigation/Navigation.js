@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 import React, { useState } from "react";
 import "./Navigation.css";
 
-import logo from '../../media/logo.png'
+import logo from '../../media/logo.png';
+import homeImage from '../../media/home.jpg';
 
 export default function App() {
   const [state, setstate] = useState(false);
@@ -16,14 +17,18 @@ export default function App() {
 
   return (
     <>
-      <div className="landing_img"> <img src="https://picsum.photos/1920/1200" alt="" /></div>
+      <div className="landing_img"> <img src={homeImage} alt="" /></div>
       <div className="nav">
-        <div className="logo"> <img style={{width: "10rem"}} src={logo} alt="Mehmed Hyusein" /></div>
+        <div className="logo"> 
+          <NavLink to="/">
+            <img style={{width: "10rem"}} src={logo} alt="Mehmed Hyusein" />
+          </NavLink></div>
         <div className="ab">
           <ul className="items">
             <li><NavLink to="/about"> Über uns </NavLink></li>
             <li><NavLink to="/leistungen"> Leistungen </NavLink></li>
             <li><NavLink to="/referenz"> Referenz </NavLink></li>
+            <li><NavLink to="/gallery"> Gallery </NavLink></li>
           </ul>
           <ul className="navbuttons">
             <button className="button">

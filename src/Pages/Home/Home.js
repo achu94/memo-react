@@ -1,7 +1,7 @@
 import About from '../About/About';
 import IconSection from '../../Components/IconSection/IconSection';
 import CartList from '../../Components/CartList/CartList';
-import Footer from '../Footer/Footer';
+import Kontakt from '../Kontakt/Kontakt';
 
 const Home = () => {
     
@@ -10,7 +10,7 @@ const Home = () => {
             <About />
             <IconSection />
             <CartList/>
-            <Footer />
+            <Kontakt />
         </>
     );
 }

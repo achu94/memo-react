@@ -17,8 +17,8 @@
 
 .cart-image {
     display: block;
-    max-width: 100%;
-    width: 100%;
+    max-width: 42%;
+    width: 30%;
     height: 100%;
 }
 
@@ -30,7 +30,7 @@
     border-radius: 0.5rem;
     
     border-left: 0 solid #076892;
-    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+    transition: border-left 100ms ease-in-out, padding-left 100ms ease-in-out;
   }
   
   .cart-container:hover {
