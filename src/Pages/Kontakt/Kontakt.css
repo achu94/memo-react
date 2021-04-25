@@ -1,14 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
 .kontakt-container {
     display: flex;
     justify-content: space-between;
 }
 
-.kontakt-container div {
-    display: flex;
-    flex-direction: column;
+.kontakt-container div span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+.kontakt-oeffnungszeiten {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 
 .form-input::-webkit-input-placeholder, .form-textarea::-webkit-input-placeholder {
   color: #aca49c;
@@ -120,7 +127,7 @@
 
 .form-input:hover {
   background: #e2dedb;
-  color: #e2dedb;
+  color: #E89B00;
 }
 
 .form-textarea {
@@ -147,7 +154,7 @@
 
 .form-textarea:hover {
   background: #e2dedb;
-  color: #e2dedb;
+  color: #E89B00;
 }
 
 #submit {

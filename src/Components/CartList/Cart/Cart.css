@@ -17,9 +17,9 @@
 
 .cart-image {
     display: block;
-    max-width: 42%;
-    width: 30%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
+    padding: 0.3rem;
 }
 
 .cart-container {

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import "./Navigation.css";
 
 import logo from '../../media/logo.png';
-import homeImage from '../../media/home.jpg';
+import homeImage from '../../media/logo-04.png';
 
 export default function App() {
   const [state, setstate] = useState(false);
@@ -19,20 +19,20 @@ export default function App() {
     <>
       <div className="landing_img"> <img src={homeImage} alt="" /></div>
       <div className="nav">
-        <div className="logo"> 
+        {/* <div className="logo"> 
           <NavLink to="/">
             <img style={{width: "10rem"}} src={logo} alt="Mehmed Hyusein" />
-          </NavLink></div>
+          </NavLink>
+        </div> */}
         <div className="ab">
           <ul className="items">
-            <li><NavLink to="/about"> Über uns </NavLink></li>
-            <li><NavLink to="/leistungen"> Leistungen </NavLink></li>
-            <li><NavLink to="/referenz"> Referenz </NavLink></li>
+            <li><NavLink to="/#about"> Über uns </NavLink></li>
+            <li><NavLink to="/#leistungen"> Leistungen </NavLink></li>
             <li><NavLink to="/gallery"> Gallery </NavLink></li>
           </ul>
           <ul className="navbuttons">
             <button className="button">
-              <li><NavLink style={{ color: "white" }} to="/kontakt" > Kontakt </NavLink></li>
+              <li><NavLink style={{ color: "white" }} to="/#kontakt" > Kontakt </NavLink></li>
             </button>
           </ul>
         </div>

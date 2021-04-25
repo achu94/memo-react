@@ -32,17 +32,12 @@ const CartList = () => {
     ]
 
     return (
-        <div className="main">
-            <h1>Leistungen</h1>
-            {/* <br></br> */}
-            <div className="CartList">
-                {
-                    LeistungArr.map((element) => {
-                        return <Cart header={element.header} body={element.body} />;
-                    })
-                }
-            </div>
-
+        <div className="CartList">
+            {
+                LeistungArr.map((element) => {
+                    return <Cart header={element.header} body={element.body} />;
+                })
+            }
         </div>
     );
 }

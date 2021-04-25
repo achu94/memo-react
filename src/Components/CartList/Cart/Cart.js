@@ -9,7 +9,7 @@ export default function Cart(props) {
       <div className="cart-inhalt-text">
         <h3>{props.header ? props.header : 'HEADER FEHLT'}</h3>
         <p>{props.body ? props.body : 'BODY FEHLT'}</p>
-        <button>Lern More!</button>
+        {/* <button>Lern More!</button> */}
       </div>
     </div>
   );

@@ -8,24 +8,22 @@ import './Kontakt.css';
 const Kontakt = () => {
 
     return(
-        <div className="main">
+        <div className="main" id="kontakt">
             <h1>Kontakt</h1>
             <ul className="kontakt-container">
                 <li>
                     <div>
                         <h2>Telefon</h2>
                         <span>
-                            <PhoneIcon />
-                            <p>123456789</p>  
+                            <h3>+49 1575 3866363</h3>
                         </span>
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div className="kontakt-oeffnungszeiten" >
                         <h2>Adresse</h2>
-                        <HomeIcon /> 
-                        <div> Lorem ipsum dolor sit amet.</div>
-                        <div>Lorem ipsum.</div>
+                        <h3>Friesenstraße 13</h3>
+                        <h3>26655 Westerstede</h3>
                     </div>
                 </li>
                 <li>

@@ -1,6 +1,6 @@
 import About from '../About/About';
 import IconSection from '../../Components/IconSection/IconSection';
-import CartList from '../../Components/CartList/CartList';
+import Leistungen from '../Leistungen/Leistungen';
 import Kontakt from '../Kontakt/Kontakt';
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
         <>
             <About />
             <IconSection />
-            <CartList/>
+            <Leistungen/>
             <Kontakt />
         </>
     );
