@@ -1,10 +1,9 @@
 .kontakt-container {
     display: flex;
-    text-align: center;
     justify-content: space-between;
 }
 
-.kontakt-oeffnungszeiten {
+.kontakt-container div {
     display: flex;
     flex-direction: column;
 }
