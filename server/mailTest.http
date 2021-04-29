@@ -1,0 +1,9 @@
+POST http://localhost:5000/contact/mail HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "Vladi Putin",
+    "tel"  : "0885044100", 
+    "email": "aygyun_94@yahoo.de", 
+    "message" : "Yaragmn basini ye."
+}

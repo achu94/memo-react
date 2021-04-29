@@ -1,11 +1,14 @@
 const express = require('express');
+
+const errorHandler = require('./middlewares/errorHandler');
+
+const config = require('./config');
+const routes = require('./routes');
 const app = express();
-const path = require('path');
 
-app.use(express.static(path.join(__dirname, 'build')));
+require('./config/express')(app);
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-})
+app.use(routes);
+app.use(errorHandler);
 
-app.listen(5000, () => console.log(`Server is running at port 5000!`));
+app.listen(config.PORT, () => console.log(`Server is running on port ${config.PORT}...`));
