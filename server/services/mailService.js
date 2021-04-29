@@ -24,7 +24,7 @@ async function main(senderName, senderTel, senderEmail, senderMessage) {
     to: "aygyun_94@outlook.de", // list of receivers
     subject: "Anfrage von " + senderEmail, // Subject line
     text: senderName + "hat eine Anfrage " + senderMessage, // plain text body
-    html: "<b>Hello world?</b>", // html body
+    html: "<b>Hello world?</b>" + senderTel // html body
   });
 
   console.log("Message sent: %s", info.messageId);
