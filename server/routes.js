@@ -8,7 +8,7 @@ const contactController = require('./controllers/contactController');
 const router = Router();
 
 router.use('/', homeController);
-router.use('/contact', contactController);
+router.use('/api/contact', contactController);
 
 router.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
