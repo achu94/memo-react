@@ -8,7 +8,7 @@ function setupExpress(app){
     
     app.use(bodyParser.json());
     
-    app.use(express.static(path.join(__dirname, 'build')));
+    app.use(express.static(path.resolve('build')));
 
     app.use(express.urlencoded({
         extended: true
