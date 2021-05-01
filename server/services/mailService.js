@@ -1,5 +1,6 @@
 "use strict";
 const nodemailer = require("nodemailer");
+const hbs = require('nodemailer-express-handlebars');
 
 // async..await is not allowed in global scope, must use a wrapper
 async function main(senderName, senderTel, senderEmail, senderMessage) {
@@ -18,21 +19,34 @@ async function main(senderName, senderTel, senderEmail, senderMessage) {
     },
   });
 
+  transporter.use('compile', hbs({
+    viewEngine : 'express-handlebars',
+    viewPath: './'
+  }));
+
+  let mailOptions = {
+    from : process.env.MAIL_FROM,
+    to   : process.env.MAIL_USER,
+    subject: ' mh-trockenbau Neue Anfrage.',
+    text: senderMessage,
+    name: senderName,
+    tel: senderTel,
+    mail: senderEmail,
+    template: 'main',
+    context: {
+      text: senderMessage,
+      name: senderName,
+      tel: senderTel,
+      mail: senderEmail
+    }
+  }
+
   // send mail with defined transport object
-  let info = await transporter.sendMail({
-    from: '"Fred Foo 👻" <'+process.env.MAIL_FROM+'>', // sender address
-    to: "aygyun_94@outlook.de", // list of receivers
-    subject: "Anfrage von " + senderEmail, // Subject line
-    text: senderName + "hat eine Anfrage " + senderMessage, // plain text body
-    html: "<b>Hello world?</b>" + senderTel // html body
+  return await transporter.sendMail(mailOptions, (err, info) => {
+    if(err) { return console.log('Error. ', err)}
+
+    return info;
   });
-
-  console.log("Message sent: %s", info.messageId);
-  // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-  // Preview only available when sending through an Ethereal account
-  console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-  // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 }
 
 module.exports = {

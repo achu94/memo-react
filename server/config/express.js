@@ -8,12 +8,13 @@ function setupExpress(app){
     
     app.use(bodyParser.json());
     
-    app.use(express.static(path.resolve('build')));
-
+    // if(process.env.NODE_ENV == 'development'){
+        app.use(express.static(path.resolve('build')));
+    // }
+    
     app.use(express.urlencoded({
         extended: true
     }));
-    
 }
 
 module.exports = setupExpress;
