@@ -3,8 +3,17 @@ import { NavLink } from 'react-router-dom';
 import React, { useState } from "react";
 import "./Navigation.css";
 
+import Button from '@material-ui/core/Button';
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
+
 import logo from '../../media/logo.png';
 import homeImage from '../../media/logo-04.png';
+
+const toggleIconStyle = {
+  fontSize : 'xx-large',
+  fill: '#E89B00',
+}
 
 export default function App() {
   const [state, setstate] = useState(false);
@@ -37,11 +46,9 @@ export default function App() {
           </ul>
         </div>
         <div className="toggler" onClick={toogle}>
-          <img
-            src="https://www.barberemerson.com/images/fa_bars.png"
-            alt="toggle"
-            className="img"
-          />
+         <Button>
+          <MenuIcon style={ toggleIconStyle } />
+         </Button>
         </div>
       </div>
       {state && (
@@ -50,17 +57,13 @@ export default function App() {
             <ul>
               <li>
                 <div className="overlay_close" onClick={toogle}>
-                  <img className="landing-img"
-                    className="overlay_close_button"
-                    src="https://www.materialui.co/materialIcons/navigation/close_white_2048x2048.png"
-                    alt="close"
-                  />
+                  <Button><CloseIcon style={toggleIconStyle} /></Button>
                 </div>
               </li>
               <li><NavLink to="/"> Home </NavLink></li>
-              <li><NavLink to="/about"> Über uns </NavLink></li>
-              <li><NavLink to="/referenz"> Referenz </NavLink></li>
-              <li><NavLink to="/kontakt" > Kontakt </NavLink></li>
+              <li><NavLink to="/#about"> Über uns </NavLink></li>
+              <li><NavLink to="/#leistungen"> Leistungen </NavLink></li>
+              <li><NavLink to="/gallery"> Gallery </NavLink></li>
             </ul>
           </div>
         </div>
