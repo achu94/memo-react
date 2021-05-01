@@ -1,6 +1,3 @@
-import PhoneIcon from '@material-ui/icons/Phone';
-import HomeIcon from '@material-ui/icons/Home';
-
 import KontaktFormular from './KontaktFormular';
 
 import './Kontakt.css';

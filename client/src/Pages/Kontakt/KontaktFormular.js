@@ -22,13 +22,13 @@ class App extends React.Component {
         <form id="form" onSubmit={this.handleSubmit.bind(this)} method="POST">
             <label htmlFor="name">Name</label>
             <input name="name" type="text" className="form-input" value={this.state.name} onChange={this.onNameChange.bind(this)} />
-            <label htmlFor="name">Tel:</label>
+            <label htmlFor="name">Tel</label>
             <input name="tel" type="text" className="form-input" value={this.state.tel} onChange={this.onTelChange.bind(this)} />
-            <label htmlFor="Email1">Email address</label>
+            <label htmlFor="Email1">Email Address</label>
             <input name="email" type="email" className="form-input" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Nachricht</label>
             <textarea name="textArea" className="form-textarea" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-          <button id="submit" type="submit">Submit</button>
+          <button id="submit" type="submit">Senden</button>
         </form>
       </div>
     );
