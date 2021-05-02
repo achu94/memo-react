@@ -95,10 +95,10 @@ class App extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    this.setState(() => ({sendClicked : true}));
+    this.setState(() => ({isLoading : true}));
 
     contactServices.sendEmail(this.state)
-      .then((res) => this.setState(() => ({sendClicked : false})));
+      .then((res) => this.setState(() => ({isLoading : false})));
   }
 }
 
