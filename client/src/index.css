@@ -28,6 +28,13 @@
 .color-secondary-2-3 { color: #1B0F81 }
 .color-secondary-2-4 { color: #130964 }
 
+body {
+    margin: 0;
+    margin: 0 auto;
+    width: clamp(138%, 50%, 1200px);
+    max-width: 1200px;
+}
+
 p, h1, h2, h3 {
     font-family: 'Rubik', sans-serif;
     color: rgb(69, 69, 69);
@@ -42,11 +49,6 @@ h1 {
     color: #03405B;
 }
 
-body {
-    margin: 0;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 .main {
     margin-right: auto;
