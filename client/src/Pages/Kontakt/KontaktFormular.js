@@ -1,5 +1,7 @@
 import React from 'react';
 
+import LoadingBall from '../../Components/LoadingBalls/LoadingBalls';
+
 import contactServices from '../../services/contactServices';
 
 class App extends React.Component {
@@ -11,7 +13,8 @@ class App extends React.Component {
       email: '',
       message: '',
       fields: {name: false, tel: false, email: false, message : false},
-      errors: {}
+      errors: {},
+      isLoading : false
     }
   }
 
@@ -28,7 +31,7 @@ class App extends React.Component {
             <input name="email" type="email" className="form-input" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
             <label htmlFor="message">Nachricht</label>
             <textarea name="textArea" className="form-textarea" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-          <button id="submit" type="submit">Senden</button>
+          {!this.state.isLoading ? <button id="submit" type="submit">Senden</button> : <LoadingBall />}
         </form>
       </div>
     );
@@ -92,7 +95,10 @@ class App extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    contactServices.sendEmail(this.state);
+    this.setState(() => ({sendClicked : true}));
+
+    contactServices.sendEmail(this.state)
+      .then((res) => this.setState(() => ({sendClicked : false})));
   }
 }
 

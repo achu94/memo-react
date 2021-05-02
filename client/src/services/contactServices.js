@@ -6,7 +6,7 @@ function sendEmail(mailData){
     };
     
     return fetch(window.location.href + 'api/contact/mail', requestOptions)
-        .then( res => console.log(res))
+        .then( res => res.ok)
         .catch(function(error) {
             console.log('Looks like there was a problem: \n', error);
         });
