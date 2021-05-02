@@ -30,7 +30,6 @@
     border-radius: 0.5rem;
     
     border-left: 0 solid #076892;
-    transition: border-left 100ms ease-in-out, padding-left 100ms ease-in-out;
   }
   
   .cart-container:hover {
