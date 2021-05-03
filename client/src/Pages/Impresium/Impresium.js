@@ -6,7 +6,7 @@ const Impresium = ()  => {
     return (
         <div className="main">
             <div>
-                <h2>Impressum</h2>
+                <h2>Impresium</h2>
                 <div>
                     <h3><u>Angaben gem. § 5 TMG:</u> </h3>
                     <p>Mehmed, Hyusein</p>
@@ -22,9 +22,9 @@ const Impresium = ()  => {
             </div>
             <br></br>
             <div>
-                <h3><u>Umsatzsteuer-Identifikationsnummer gem. § 27 a Umsatzsteuergesetz:</u> </h3>
+                <h3><u>Umsatzsteuer-ID:</u> </h3>
                 <div>
-                <p>Ust.-Id Nr.: 69/119/010422008</p>
+                <p>69/119/010422008</p>
                 {/* DE XXX XXX XXX */}
                 
                 </div>
@@ -52,7 +52,7 @@ const Impresium = ()  => {
                     Die auf unserer Webseite veröffentlichen Inhalte und Werke unterliegen dem deutschen Urheberrecht <a href="http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf">(http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf)</a> . Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung des geistigen Eigentums in ideeller und materieller Sicht des Urhebers außerhalb der Grenzen des Urheberrechtes bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Urhebers i.S.d. Urhebergesetzes <a href="http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf">(http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf)</a>. Downloads und Kopien dieser Seite sind nur für den privaten und nicht kommerziellen Gebrauch erlaubt. Sind die Inhalte auf unserer Webseite nicht von uns erstellt wurden, sind die Urheberrechte Dritter zu beachten. Die Inhalte Dritter werden als solche kenntlich gemacht. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte unverzüglich entfernen.
                 </p>
 
-                <p>Dieses Impressum wurde freundlicherweise von jurarat.de zur Verfügung gestellt.</p>
+                <p>Dieses Impressum wurde freundlicherweise von <a href="https://www.jurarat.de">jurarat.de</a> zur Verfügung gestellt.</p>
             </div>
         
         </div>
