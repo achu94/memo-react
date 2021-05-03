@@ -103,14 +103,14 @@
 
 #form {
   position: relative;
-  width: 500px;
+  width: 43%;
   margin: 50px auto 100px auto;
 }
 
 .form-input {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  width: 470px;
+  width: 100%;
   height: 50px;
   padding: 0px 15px 0px 15px;
   
@@ -133,8 +133,7 @@
 }
 
 .form-textarea {
-  width: 470px;
-  max-width: 470px;
+  width: 100%;
   height: 110px;
   max-height: 110px;
   padding: 15px;
@@ -160,7 +159,7 @@
 }
 
 #submit {
-  width: 502px;
+  width: 106.5%;
   height: 30px;
   
   padding: 0;

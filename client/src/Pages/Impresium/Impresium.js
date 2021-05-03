@@ -9,7 +9,9 @@ const Impresium = ()  => {
                 <h2>Impresium</h2>
                 <div>
                     <h3><u>Angaben gem. § 5 TMG:</u> </h3>
+                    <h3>Vorname, Nachname</h3>
                     <p>Mehmed, Hyusein</p>
+                    <h3>Adresse</h3>
                     <p>Friesenstraße 26</p>
                     <p>PLZ 26655 Westerstede</p>
                 </div>
