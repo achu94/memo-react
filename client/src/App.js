@@ -11,6 +11,7 @@ import Gallery from './Pages/Gallery/Gallery';
 import Navigation from './Components/Navigation/Navigation';
 import Footer from './Pages/Footer/Footer';
 import Leistungen from "./Pages/Leistungen/Leistungen";
+import Impresium from './Pages/Impresium/Impresium';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         {/* <Route path="/#referenz" exact component={Referenz} /> */}
         <Route path="/gallery" exact component={Gallery} />
         <Route path="/kontakt" exact component={Kontakt} />
+        <Route path="/impresium" exact component={Impresium} />
         <Route component={() => <h1>Error Page !</h1>} />
       </Switch>
       <Footer />
