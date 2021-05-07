@@ -19,7 +19,7 @@ const Kontakt = () => {
                 <li>
                     <div className="kontakt-oeffnungszeiten" >
                         <h2>Adresse</h2>
-                        <h3>Friesenstraße 13</h3>
+                        <h3>Friesenstraße 26</h3>
                         <h3>26655 Westerstede</h3>
                     </div>
                 </li>

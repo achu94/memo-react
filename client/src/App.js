@@ -19,11 +19,8 @@ function App() {
       <Navigation />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={About} />
         <Route path="/leistungen" exact component={Leistungen} />
-        {/* <Route path="/#referenz" exact component={Referenz} /> */}
         <Route path="/gallery" exact component={Gallery} />
-        <Route path="/kontakt" exact component={Kontakt} />
         <Route path="/impresium" exact component={Impresium} />
         <Route component={() => <h1>Error Page !</h1>} />
       </Switch>

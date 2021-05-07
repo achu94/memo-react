@@ -140,6 +140,7 @@ li {
 
 .nav a {
   color: #E89B00;
+  cursor: pointer;
 }
 
 .overlay {
