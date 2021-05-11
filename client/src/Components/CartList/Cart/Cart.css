@@ -2,13 +2,14 @@
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    width: clamp(500px,45%,600px);
+    width: clamp(100%,45%,600px);
     justify-content: space-between;
 }
 
 .cart-inhalt-text {
     text-align: start;
     padding: 0.3rem;
+    width: 100%;
 }
 
 .cart-inhalt-text button {

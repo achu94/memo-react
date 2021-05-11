@@ -101,9 +101,13 @@
   color : #03405B;
 }
 
+#form{
+  font-size: 1.5rem;
+}
+
 #form {
   position: relative;
-  width: 43%;
+  width: 90%;
   margin: 50px auto 100px auto;
 }
 
@@ -112,7 +116,6 @@
   font-size: 0.875em;
   width: 100%;
   height: 50px;
-  padding: 0px 15px 0px 15px;
   
   background: transparent;
   outline: none;
@@ -136,7 +139,6 @@
   width: 100%;
   height: 110px;
   max-height: 110px;
-  padding: 15px;
   
   background: transparent;
   outline: none;
@@ -159,14 +161,14 @@
 }
 
 #submit {
-  width: 106.5%;
-  height: 30px;
+  width: 100%;
+  height: 3rem;
   
   padding: 0;
   margin: -5px 0px 0px 0px;
   
   font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
+  font-size: 1.5rem;
   color: #e2dedb;
   background: #E89B00;
   
@@ -175,6 +177,7 @@
   
   border: solid 1px #e2dedb;
   border-top: none;
+
 }
 
 #submit:hover {

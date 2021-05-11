@@ -13,7 +13,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import homeImage from '../../media/logo-04.png';
 
 const toggleIconStyle = {
-  fontSize : 'xx-large',
+  fontSize : 'xxx-large',
   fill: '#E89B00',
 }
 
