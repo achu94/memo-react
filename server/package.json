@@ -11,14 +11,24 @@
   "author": "Aygyun Yakub",
   "license": "ISC",
   "dependencies": {
+    "admin-bro": "^4.0.1",
+    "admin-bro-expressjs": "^2.1.1",
+    "admin-bro-mongoose": "^0.5.2",
+    "argon2": "^0.28.2",
     "body-parser": "^1.19.0",
+    "connect-mongo": "^4.4.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.2",
     "mongoose": "^5.12.13",
     "nodemailer": "^6.6.0",
     "nodemailer-express-handlebars": "^4.0.0"
   },
   "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
     "nodemon": "^2.0.7"
   }
 }
