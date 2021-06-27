@@ -11,5 +11,6 @@ module.exports = {
     ecmaVersion: 12,
   },
   rules: {
+    "eslint-disable": "linebreak-style",
   },
 };
